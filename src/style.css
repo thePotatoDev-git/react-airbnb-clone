@@ -6,7 +6,12 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+.bold {
+    font-weight: bold;
+}
+.gray {
+    color: #918E9B;
+}
 nav {
     height: 70px;
     display: flex;
@@ -42,9 +47,10 @@ section {
 .card {
     display: flex;
     flex-direction: column;
+    width: 176px;
 }
 .card--image {
-    width: 176px;
+    width: 100%;
     border-radius: 10px
 }
 .card--star {
