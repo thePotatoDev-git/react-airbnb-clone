@@ -8,12 +8,8 @@ export default function App() {
   const cards = data.map(experience => {
     return (
       <Card 
-        img={experience.coverImg}
-        rating={experience.stats.rating}
-        reviewCount={experience.stats.reviewCount}
-        location={experience.location}
-        title={experience.title}
-        price={experience.price}
+        key={experience.id}
+        experience={experience}
       />
     )
   })
@@ -21,7 +17,9 @@ export default function App() {
       <>
         <Navbar />
         <Hero />
-        {cards}
+        <section className="cards-list">
+          {cards}
+        </section>
       </>
     );
 };
